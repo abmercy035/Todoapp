@@ -7,8 +7,9 @@ export default function RouteSwitching() {
   <React.Fragment>
    <Router>
     <Routes>
-     <Route path="/" element={ <OnboardingLayout /> }>
-     </Route>
+     <Route path="/" element={ <OnboardingLayout /> } />
+     <Route path="/login" element={ <OnboardingLayout /> } />
+     <Route path="/signup" element={ <OnboardingLayout /> } />
     </Routes>
    </Router>
   </React.Fragment>
