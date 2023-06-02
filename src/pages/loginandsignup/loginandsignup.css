@@ -1,0 +1,104 @@
+.login-signup-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ padding: 10px;
+ gap: 60px;
+}
+
+.login-signup-container .heading {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 95%;
+}
+
+.login-signup-container .heading .top-nav-btn {
+ min-height: 45px;
+ width: 100%;
+ padding: 10px;
+}
+
+.login-signup-container .heading .page-title {
+ display: flex;
+ width: 100%;
+ flex-direction: column;
+ gap: 10px;
+ padding: 10px;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.login-signup-container .heading .page-title .title-text {
+ display: flex;
+ font-size: 30px;
+ gap: 10px;
+}
+
+.login-signup-container .heading .page-title .sub-title-text {
+ font-size: 15px;
+ opacity: 0.6;
+}
+
+.form-conatainer {
+ width: 95%;
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+}
+
+.forms {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+.forms .form-group {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ padding: 10px;
+}
+
+.forms label {
+ width: 100%;
+ font-size: 18px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.forms input {
+ width: 100%;
+ height: 46px;
+ display: flex;
+ flex-direction: column;
+ border: none;
+ border-bottom: 1px solid #8585854d;
+}
+
+.forms input::placeholder {
+ width: 100%;
+ font-size: 16px;
+ opacity: 0.5;
+}
+
+.form-conatainer .form-nav-links {
+ width: 100%;
+ height: 40px;
+ font-size: 18px;
+ font-family: Arial, Helvetica, sans-serif;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px;
+ cursor: pointer;
+}
+
+.form-conatainer .login-form-btn {
+ background-color: #F96060;
+ color: white;
+ font-size: 18px;
+ height: 50px;
+}
