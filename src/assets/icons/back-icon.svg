@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.196" height="17.712" viewBox="0 0 25.196 17.712">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M0,0H25.2V17.712H0Z" transform="translate(0 0.001)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Page_1" data-name="Page 1" transform="translate(0 -0.001)">
+    <path id="Clip_2-2" data-name="Clip 2" d="M0,0H25.2V17.712H0Z" transform="translate(0 0.001)" fill="none"/>
+    <g id="Page_1-2" data-name="Page 1" clip-path="url(#clip-path)">
+      <path id="Fill_1" data-name="Fill 1" d="M8.219.267A.893.893,0,0,1,9.488,1.525L3.051,7.962H24.293a.9.9,0,0,1,.9.887.906.906,0,0,1-.9.9H3.051l6.437,6.426a.91.91,0,0,1,0,1.27.889.889,0,0,1-1.269,0L.258,9.486a.9.9,0,0,1,0-1.258Z" transform="translate(0 0)" fill="#1e201d"/>
+    </g>
+  </g>
+</svg>
