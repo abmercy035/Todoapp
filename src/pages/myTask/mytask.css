@@ -1,0 +1,58 @@
+.work-list-container {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+}
+
+.tasks-container {
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ overflow: auto;
+ padding: 20px;
+}
+
+.tasks {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ align-items: center;
+ justify-content: center;
+ overflow: auto;
+}
+
+.tasks .task-date-as-title {
+ width: 100%;
+ font-size: 14px;
+ font-family: Arial, sans-serif;
+ opacity: .6;
+}
+
+.tasks .task-items-container {
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ align-items: center;
+ justify-content: center;
+ padding: 10px;
+}
+
+.tasks .task-items-container .task-item-card {
+ min-height: 70px;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ box-shadow: 1px 1px 4px 1px #ccc;
+ border-radius: 3px;
+}
+
+.tasks .task-items-container .task-item-card .task-indicator-bar {
+ height: 20px;
+ width: 4px;
+ background-color: rgb(218, 64, 64);
+ /* background-color: #ccc; */
+}
