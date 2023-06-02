@@ -1,12 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
+import Footer from '../components/footer/Footer'
 
 export default function HomeLayout() {
  return (
   <React.Fragment>
-   <div>
-    <Outlet />
-   </div>
+   <Outlet />
+   <Footer />
   </React.Fragment>
  )
 }

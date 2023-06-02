@@ -5,9 +5,12 @@ import sliderImgthree from "../assets/svg/manandwomanstanding.svg"
 import '../pages/onboarding/onboarding.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import Button from '../components/button/Button';
+import { useNavigate } from 'react-router-dom';
 
 export default function OnboardingLayout() {
 
+ const navigate = useNavigate()
  const [ count, setCount ] = useState(0);
 
  useEffect(() => {
@@ -54,8 +57,8 @@ export default function OnboardingLayout() {
       </div>
      </Carousel>
      <footer>
-      <button>Get Started</button>
-      <button>Log In</button>
+      <Button value="Get started"  click={ () => navigate('/signup') }/>
+      <Button value="Log In"  click={ () => navigate('/login') } />
      </footer>
     </React.Fragment >
    );

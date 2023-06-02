@@ -5,18 +5,19 @@
   font-weight: 400;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #fff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-*{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-outline: none;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
 }
 
 a {
@@ -30,7 +31,7 @@ a:hover {
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #fff;
 }
 
 h1 {
@@ -53,6 +54,7 @@ button {
 .flex {
   display: flex;
 }
+
 .full-width {
   width: 100%;
 }
