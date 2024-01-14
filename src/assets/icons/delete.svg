@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14.873" height="19.341" viewBox="0 0 14.873 19.341">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_2" data-name="Clip 2" d="M0,0H14.873V19.341H0Z" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Page_1" data-name="Page 1" transform="translate(0 0)" clip-path="url(#clip-path)">
+    <path id="Fill_1" data-name="Fill 1" d="M11.523,16.373H2.157a1.578,1.578,0,0,1-1.64-1.5V2.3c0-.284-.512-.772-.518-.777V0H13.681V1.524c-.006.005-.517.49-.517.777V14.869A1.579,1.579,0,0,1,11.523,16.373ZM9.531,3.262v9.7h1.221v-9.7H9.531Zm-3.277,0v9.7H7.475v-9.7Zm-2.949,0v9.7H4.526v-9.7Z" transform="translate(0.596 2.969)" fill="#f96060"/>
+    <path id="Fill_3" data-name="Fill 3" d="M14.873,2.642H0V1.71H3.794A2.215,2.215,0,0,1,6.025,0H8.852a2.22,2.22,0,0,1,2.231,1.71h3.79v.931ZM6.02,1.124a1.041,1.041,0,0,0-.957.586H9.81a1.042,1.042,0,0,0-.958-.586Z" transform="translate(0 0)" fill="#f96060"/>
+  </g>
+</svg>

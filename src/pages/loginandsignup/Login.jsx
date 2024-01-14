@@ -35,10 +35,11 @@ export default function Login() {
      </div>
     </form>
     <div className="form-nav-links">
-     <div className="forgot-password-link" onClick={ () => navigate('/signup') }>Don't have an account? Sign up</div>
-     <div className="forgot-password-link" onClick={ () => navigate('/reset_password') }>Forgot password</div>
+     <div className="forgot-password-link" onClick={ () => navigate('/signup') }>New account? <span className="alt-form-nav"> Sign up</span></div>
+     <div className="forgot-password-link" onClick={ () => navigate('/verify_email') }>Forgot password</div>
     </div>
-    <Button value={ "Log In" } cls="login-form-btn" click={ () => navigate('/login') } />
+    
+    <Button value={ "Log In" } cls="login-form-btn" click={ () => navigate('/home/mytask') } />
    </div>
   </div>
  )

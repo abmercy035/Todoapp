@@ -6,6 +6,7 @@
  width: 100%;
  padding: 10px;
  gap: 60px;
+ color: black;
 }
 
 .login-signup-container .heading {
@@ -20,6 +21,7 @@
  min-height: 45px;
  width: 100%;
  padding: 10px;
+ cursor:pointer;
 }
 
 .login-signup-container .heading .page-title {
@@ -33,12 +35,12 @@
 
 .login-signup-container .heading .page-title .title-text {
  display: flex;
- font-size: 30px;
+ font-size: 24px;
  gap: 10px;
 }
 
 .login-signup-container .heading .page-title .sub-title-text {
- font-size: 15px;
+ font-size: 13px;
  opacity: 0.6;
 }
 
@@ -46,7 +48,7 @@
  width: 95%;
  display: flex;
  flex-direction: column;
- gap: 40px;
+ gap: 20px;
 }
 
 .forms {
@@ -60,45 +62,57 @@
  width: 100%;
  display: flex;
  flex-direction: column;
- padding: 10px;
+ padding: 5px;
 }
 
 .forms label {
  width: 100%;
- font-size: 18px;
+ font-size: 15px;
  font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .forms input {
  width: 100%;
- height: 46px;
+ height: 40px;
  display: flex;
  flex-direction: column;
  border: none;
  border-bottom: 1px solid #8585854d;
+ font-size: 13px;
 }
 
 .forms input::placeholder {
  width: 100%;
- font-size: 16px;
+ font-size: 13px;
  opacity: 0.5;
 }
 
 .form-conatainer .form-nav-links {
  width: 100%;
- height: 40px;
- font-size: 18px;
+ height: 20px;
+ font-size: 12px;
  font-family: Arial, Helvetica, sans-serif;
  display: flex;
+ flex-wrap: wrap;
  justify-content: space-between;
  align-items: center;
- padding: 10px;
+ padding: 5px;
+ cursor: pointer;
+ column-gap: 5px;
+ /* font-variant-caps: petite-caps; */
+}
+.form-conatainer .form-nav-links .alt-form-nav {
+ font-size: 12px;
+ font-family: Arial, Helvetica, sans-serif;
+ color:rgb(245, 82, 82);
  cursor: pointer;
 }
 
 .form-conatainer .login-form-btn {
+ margin-top: 30px;
  background-color: #F96060;
  color: white;
- font-size: 18px;
- height: 50px;
+ font-size: 13px;
+ height: 38px;
 }

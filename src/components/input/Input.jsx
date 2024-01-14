@@ -87,6 +87,7 @@ export default function Input({
           max={ max }
           height={ height }
           width={ width }
+          defaultChecked
           onChange={ change }
           style={ styles }
           onFocus={ focus }

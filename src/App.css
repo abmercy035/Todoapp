@@ -4,8 +4,15 @@
   box-sizing: border-box;
   outline: none;
 }
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-thumb{
+  background-color: black;
+  width: 5px;
+}
 
 #root {
-  max-width: 600px; 
+  /* max-width: 600px;  */
   margin: auto;
 }

@@ -37,7 +37,7 @@ export default function Signup() {
      </div>
     </form>
     <div className="form-nav-links">
-     <div className="forgot-password-link" onClick={ () => navigate('/login') }>Already have an account? Sign in</div>
+     <div className="forgot-password-link" onClick={ () => navigate('/login') }>Already have an account?  <span className="alt-form-nav"> Sign in</span></div>
     </div>
     <Button value={ "Sign up" } cls="login-form-btn" click={ () => navigate('/login') } />
    </div>

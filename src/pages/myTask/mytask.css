@@ -1,58 +1,227 @@
 .work-list-container {
- display: flex;
- flex-direction: column;
- width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: black;
+  height: 100vh;
 }
 
 .tasks-container {
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: center;
- overflow: auto;
- padding: 20px;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow-y: auto;
+  gap: 20px;
+  overflow-x: hidden;
+  padding: 20px 0 120px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .tasks {
- width: 100%;
- display: flex;
- flex-direction: column;
- gap: 20px;
- align-items: center;
- justify-content: center;
- overflow: auto;
+  cursor: pointer;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .tasks .task-date-as-title {
- width: 100%;
- font-size: 14px;
- font-family: Arial, sans-serif;
- opacity: .6;
+  width: 95%;
+  font-size: 15px;
+  font-variant-caps: all-small-caps;
+  font-family: Arial, sans-serif;
+  opacity: 0.5;
+  color: rgb(0, 0, 0);
+  font-weight: 300;
 }
 
 .tasks .task-items-container {
- width: 100%;
- display: flex;
- flex-direction: column;
- gap: 20px;
- align-items: center;
- justify-content: center;
- padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 4px;
 }
 
 .tasks .task-items-container .task-item-card {
- min-height: 70px;
- width: 100%;
- display: flex;
- align-items: center;
- justify-content: space-between;
- box-shadow: 1px 1px 4px 1px #ccc;
- border-radius: 3px;
+  min-height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 4px 0px rgba(123, 122, 122, 0.2);
+  border-radius: 3px;
+}
+.tasks .task-items-container .task-item-card.done {
+ text-decoration: line-through;
+ text-decoration-thickness: 1.5px;
+ text-decoration-color: rgb(68, 72, 86);
+}
+.tasks .task-items-container .task-item-card.done .task-content {
+  opacity: 0.5;
+}
+
+.tasks .task-items-container.active .task-item-card {
+  transform: translateX(-120px);
 }
 
 .tasks .task-items-container .task-item-card .task-indicator-bar {
- height: 20px;
- width: 4px;
- background-color: rgb(218, 64, 64);
- /* background-color: #ccc; */
+  height: 20px;
+  width: 4px;
+  background-color: royalblue;
+  /* background-color: #ccc; */
+}
+.tasks .task-items-container .task-item-card.done .task-indicator-bar {
+  background-color: #da4040;
+}
+
+.tasks .task-items-container .task-item-card .task-check-icon {
+  width: 15%;
+  /* background-color: #ccc; */
+  /* border: 2px red solid; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Variation of work by @mrhyddenn for Radios */
+.check {
+  cursor: pointer;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+  /* border: 2px red solid; */
+}
+
+.check:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.check svg {
+  /* background: rgb(6, 74, 222); */
+  border-radius: 100%;
+  position: relative;
+  z-index: 1;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #c8ccd4;
+  stroke-width: 1.5;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+}
+
+.check svg path {
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+
+.check svg polyline {
+  stroke-dasharray: 22;
+  stroke-dashoffset: 66;
+}
+
+.check:hover:before {
+  opacity: 1;
+}
+
+.check:hover svg {
+  stroke: var(--accent-color, #a3e583);
+}
+
+#cbx2:checked + .check svg {
+  stroke: var(--accent-color, #a3e583);
+  background: #da4040;
+  padding: 2px;
+}
+
+#cbx2:checked + .check svg path {
+  stroke-dashoffset: 60;
+  transition: all 0.3s linear;
+}
+
+#cbx2:checked + .check svg polyline {
+  stroke-dashoffset: 42;
+  transition: all 0.2s linear;
+  transition-delay: 0.15s;
+}
+
+.tasks .task-items-container .task-item-card .task-content {
+  width: calc(80% - 15px);
+  height: 90%;
+}
+
+.tasks .task-items-container .task-item-card .task-text {
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tasks .task-items-container .task-item-card .task-date {
+  font-size: 13px;
+  font-weight: 200;
+  opacity: 0.7;
+}
+
+.tasks .task-items-container .task-item-actions {
+  display: none;
+}
+.tasks .task-items-container.active .task-item-actions {
+  width: 100px;
+  height: 90%;
+  position: absolute;
+  right: 4px;
+  display: flex;
+  box-shadow: 2px 1px 5px 0px #ccc;
+  /* z-index: -1; */
+  border-radius: 2px;
+}
+
+.tasks .task-items-container.active .task-item-actions .task-action-icon {
+  width: 50px;
+  height: 60%;
+  padding: 10px;
+  border-radius: 2px;
+  display: flex;
+  align-self: center;
+}
+
+.tasks .task-items-container.active .task-item-actions .task-action-icon img {
+  font-size: 16px;
+  font-weight: 200;
+  opacity: 0.7;
+  width: 100%;
+  border-radius: 2px;
+  right: 4px;
+}
+
+.tasks
+  .task-items-container.active
+  .task-item-actions
+  .task-action-icon:nth-child(even) {
+  border-left: 1px #00000055 solid;
+  /* width: calc(100% + 1px); */
 }

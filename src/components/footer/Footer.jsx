@@ -18,14 +18,16 @@ export default function Footer() {
       </label>
      </div>
 
-     <div className="icon-container"><img className='footer-icon' src={ dashboard_icon } alt="" />
+         <div className="icon-container">
+           <img className='footer-icon' src={ dashboard_icon } alt="" />
       <label className='footer-icon-label'>
        Menu
       </label>
      </div>
     </div>
 
-    <div className="icon-center-icon"><img className='footer-icon' src={ plus_icon } alt="" />
+       <div className="icon-center-icon">
+         <img className='footer-icon' src={ plus_icon } alt="" />
     </div>
     <div className="icon-group-container">
      <div className="icon-container"><img className='footer-icon' src={ notechecklist_icon } alt="" />

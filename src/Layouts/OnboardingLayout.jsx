@@ -11,54 +11,54 @@ import { useNavigate } from 'react-router-dom';
 export default function OnboardingLayout() {
 
  const navigate = useNavigate()
- const [ count, setCount ] = useState(0);
+ const [ slideCount, setSlideCount ] = useState(0)
+ const [ slideData, setSlideData ] = useState([
+  {
+   img: sliderImgone,
+   title: `Welcome to aKing!`,
+   text: " Whats going to happen tomorrow?"
 
- useEffect(() => {
-  setInterval(() => {
-   console.log('j')
-  }, 50000)
- }, [])
+  } ]);
+
 
  class DemoCarousel extends Component {
   render() {
    return (
     <React.Fragment>
-     <Carousel className="onboarding-page-carousel" emulateTouch={ false } showArrows={ false } showThumbs={ false } autoPlay={ true } interval={ 3000 } showIndicators={ false } infiniteLoop={ true } stopOnHover={ false }
-     >
+     <div className="onboarding-page-carousel">
+
       <div className='carousel-component'>
+
        <img src={ sliderImgone } />
+       <div className='carousel-text-content'>
+        <span className="text-title">Welcome to aKing!</span>
+        <p className="text-body">
+         Whats going to happen tomorrow?
+        </p>
+       </div>
       </div>
+      {/* <div className='carousel-component'>
+      <img src={ sliderImgtwo } />
       <div className='carousel-component'>
-       <img src={ sliderImgtwo } />
-      </div>
-      <div className='carousel-component'>
-       <img src={ sliderImgthree } />
-      </div>
-     </Carousel>
-     <Carousel className="carousel-text-content" showArrows={ false } emulateTouch={ false } showThumbs={ false } autoPlay={ true } interval={ 3000 } infiniteLoop={ true } stopOnHover={ false } showStatus={ false } showIndicators={ false }
-     >
-      <div className='carousel-component'>
-       <span className="text-title">Welcome to aKing</span>
-       <p className="text-body">
-        Whats going to happen tomorrow?
-       </p>
-      </div>
-      <div className='carousel-component'>
-       <span className="text-title">Work happens</span>
-       <p className="text-body">
+      <span className="text-title">Work happens</span>
+        <p className="text-body">
         Get notified when work happens.
-       </p>
-      </div>
-      <div className='carousel-component'>
-       <span className="text-title">Task and assign </span>
-       <p className="text-body">
-        Task and assign them to colleagues
-       </p>
-      </div>
-     </Carousel>
+        </p>
+        </div>
+        </div>
+        <div className='carousel-component'>
+        <img src={ sliderImgthree } />
+        <div className='carousel-component'>
+        <span className="text-title">Task and assign </span>
+        <p className="text-body">
+         Task and assign them to colleagues
+        </p>
+       </div>
+      </div> */}
+     </div>
      <footer>
-      <Button value="Get started"  click={ () => navigate('/signup') }/>
-      <Button value="Log In"  click={ () => navigate('/login') } />
+      <Button value="Get started" click={ () => navigate('/signup') } />
+      <Button value="Log In" click={ () => navigate('/login') } />
      </footer>
     </React.Fragment >
    );

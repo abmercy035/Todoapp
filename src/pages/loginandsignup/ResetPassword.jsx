@@ -10,7 +10,7 @@ export default function ResetPassword() {
 
   <div className='login-signup-container'>
    <div className="heading">
-    <div className='top-nav-btn' onClick={ () => navigate("/") }>
+    <div className='top-nav-btn' onClick={ () => navigate("/login") }>
      <img src={ backIcon } alt="" />
     </div>
     <div className="page-title">
@@ -36,9 +36,9 @@ export default function ResetPassword() {
       <Input id="username" pl="Re-enter new password" />
      </div>
     </form>
-    <div className="form-nav-links">
+    {/* <div className="form-nav-links">
      <div className="forgot-password-link" onClick={ () => navigate('/login') }>Already have an account? Sign in</div>
-    </div>
+    </div> */}
     <Button value={ "Change Password" } cls="login-form-btn" click={ () => navigate('/login') } />
    </div>
   </div>

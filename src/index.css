@@ -3,7 +3,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   color: rgba(255, 255, 255, 0.87);
   background-color: #fff;
   font-synthesis: none;
@@ -11,10 +11,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  outline: none;
+  
 }
 
 * {
   padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0;
   box-sizing: border-box;
   outline: none;
@@ -40,11 +43,9 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 5px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;

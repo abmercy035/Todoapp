@@ -12,14 +12,14 @@ export default function ForgotPassword() {
   <div className='login-signup-container'>
    <div className="heading">
     <div className='top-nav-btn'>
-     <img src={ backIcon } alt="" onClick={ () => navigate("/") } />
+     <img src={ backIcon } alt="" onClick={ () => navigate("/login") } />
     </div>
     <div className="page-title">
      <div className="title-text">
       Forgot Password
      </div>
      <div className="sub-title-text">
-      Please enter your email below
+      Please enter your email below to reset account
      </div>
     </div>
    </div>
@@ -30,7 +30,7 @@ export default function ForgotPassword() {
       <Input id="username" pl="Enter your email" />
      </div>
     </form>
-    <Button value={ "Send Request" } cls="login-form-btn" click={ () => navigate('/login') } />
+    <Button value={ "Send Request" } cls="login-form-btn" click={ () => navigate('/reset_password') } />
    </div>
   </div>
  )
